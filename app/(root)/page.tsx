@@ -9,11 +9,11 @@ const Page = () => {
   const {color} = useColor();
 
   return (
-    <main>
-      <h1 className={cn("text-[100px] text-primary", color)}>Twitch</h1>
-      <ThemeToggle />
-      <UserButton />
-    </main>
+      <>
+        <h1 className={cn("text-[100px] text-primary", color)}>Twitch</h1>
+        <ThemeToggle />
+        <UserButton />
+      </>
   );
 };
 
