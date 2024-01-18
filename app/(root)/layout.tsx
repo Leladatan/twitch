@@ -1,4 +1,4 @@
-const LayoutRoot =  ({children}: { children: React.ReactNode }) => {
+const LayoutRoot = ({children}: { children: React.ReactNode }) => {
   return (
     <main>
       {children}
