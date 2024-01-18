@@ -4,9 +4,9 @@ import {User} from "@prisma/client";
 const LayoutRoot = async ({children}: { children: React.ReactNode }) => {
   const user: User[] = await db.user.findMany();
 
-  console.log("user", user);
   return (
     <main>
+      {user[0]?.id}
       {children}
     </main>
   );
