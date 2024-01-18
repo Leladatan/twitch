@@ -140,8 +140,6 @@ model OrderItem {
   @@index([productId])
 }
 
-// Discord
-
 model Profile {
   id       String @id @default(uuid())
   userId   String @unique
@@ -286,8 +284,6 @@ model DirectMessage {
   @@index([memberId])
   @@index([conversationId])
 }
-
-// Twitch
 
 model User {
   id             String  @id @default(uuid())
